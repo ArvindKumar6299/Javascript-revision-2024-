@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM</h1>
+
+    <p class="para">I am a codder always tries to learn something </p>
+    
+    <span id="doc">What you think of me!</span>
+    <pre>
+        <code>
+            console.log("Hey There! , Kise hai ?");
+        </code>
+    </pre>
+    <button id="click">click me</button>
+
+    <span id="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+        // const body = document.querySelector("body");
+
+      const listner1 =   document.getElementById("headline");
+       const listner2 =   document.getElementById("click")
+
+    //  body.innerHTML = "<h1>Hacked!!</h1>"
+
+    listner2.addEventListener("click", ()=>{
+        console.log("Hello Buddy!");
+        listner1.style.color = "red";
+    })
+
+    listner1.addEventListener("clicked" , (headline)=>{
+        headline.style.color = "red";
+    })
+    </script>
+</body>
+</html>
